@@ -1,0 +1,26 @@
+<!--pages/post/post.wxml-->
+<import src='post-item/post-item-tpl.wxml' />
+<view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" vertical=" ">
+  <!-- 指示点水平排列：无vertical || vertical=' '|| vertical='{{false}}' -->
+    <swiper-item>
+      <image src='/images/post/602502.png' />
+      <!-- mode: cropSize !top | bottom | center | left | right | top left |
+            top right | bottom left | bottom right 
+            scaleImg !scaleToFill | aspectFit | aspectFill(short all) | widthFix -->
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/post/604601.png' />
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/post/608301.png' />
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{postList}}" wx:for-item="item" wx:for-index='idx'>
+    <view catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+      <template is="postItemTpl" data="{{...item}}" />
+    </view>
+    
+  </block>
+</view> 

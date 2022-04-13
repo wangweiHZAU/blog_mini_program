@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <image class='avatar' src='/images/avatar/600701.png'></image>
+  <text class='motto'>Hello Orange</text>
+  <view class='tour-container' catchtap='onTapJump'>
+    <text class='tour'>Tour begin</text>
+  </view>
+</view>

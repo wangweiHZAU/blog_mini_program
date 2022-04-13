@@ -1,0 +1,25 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "POST",
+          "pathName": "pages/post/post-detail/post-detail",
+          "query": "id=2",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}
